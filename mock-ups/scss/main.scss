@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8E6ECF;
+    font-family: 'Cabin', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content-container {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    border: 1px solid red;
+}
+
+.page-title {
+    font-size: 50px;
+    color: yellow;
+}
+
+.input-form {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+.note-text{
+    margin: 0px;
+    width: 359px;
+    height: 111px;
+    background-color: yellow;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    background-color: #47C2A7;
+    height: 60px;
+    width: 120px;
+    border-radius: 30%;
+    font-size: 18px;
+    transition: all 1s;
+    cursor: pointer;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\21B5';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 1s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.your-notes{
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.your-notes li {
+  height: 180px;
+  width: 150px;
+  border-radius: 2px;
+  background-color: #A7E2D8;
+  margin: 10px;
+  box-shadow: 2px 2px 4px #6F6925;
+  transition: all 0.3s ease-out;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+
+.your-notes li:nth-child(odd){
+  transform: rotate(-2deg);
+}
+
+.your-notes li:nth-child(even){
+  transform: rotate(2deg);
+}
+
+.your-notes li:hover{
+  box-shadow: 15px 15px 30px darken(#A43C37, 30%);
+  transform: rotateX(10deg) scale(1.15);
+}
