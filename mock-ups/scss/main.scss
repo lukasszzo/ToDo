@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: #8E6ECF;
     font-family: 'Cabin', sans-serif;
-    color:yellow;
+    color: yellow;
 }
 
 .container {
@@ -11,13 +11,15 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-.content-cnt{
+
+.content-cnt {
     height: 200px;
 }
-.allBox{
+
+.allBox {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 2px;
 }
 
 .clearfix:after {
@@ -25,44 +27,60 @@ body {
     display: table;
     clear: both;
 }
-.header-cnt{
+
+.header-cnt {
     height: 200px;
     text-align: center;
     padding-top: 50px;
-    font-size:30px;
+    font-size: 30px;
     border: 1px solid green;
 }
+
 form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
-.input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-form {
     text-align: center;
-    border:1px solid blue;
+    border: 1px solid blue;
     height: 300px;
-
-
 }
-$daybox:100%/7;
-.dayBox{
+$daybox: 100%/7;
+
+.dayBox {
     width: $daybox;
-}
+    display: flex;
 
-.note-text{
-    text-align:center;
-    background: yellow;
-    display: inline-block;
-    border:1px solid red;
-}
-.button{
-    cursor:pointer;
-    text-align: center;
-    width: 100px;
-    height:50px;
-    border: none;
-    background:#70CD6A;
-    border-radius: 4px;
-    font-size: 20px;
-    margin-left:10px;
-}
+    ul {
+        li {
+            border: 1px solid orange;
+            list-style-type: none;
+        }
+    }
+
+    .note-text {
+        text-align: center;
+        background: yellow;
+        display: inline-block;
+        border: 1px solid red;
+    }
+
+    .button {
+        cursor: pointer;
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        border: none;
+        background: #70CD6A;
+        border-radius: 4px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .note-text {
+        height: 30px;
+        width: 300px;
+        padding: 10px;
+    }

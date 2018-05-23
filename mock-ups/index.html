@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>To do List</title>
@@ -22,43 +23,61 @@
 
             <form class="input-form">
                 <div class='note-cnt'>
-                    <textarea type="text" cols="50" rows="8" class="note-text" placeholder="Add your note"></textarea>
+                    <input type="text" class="note-text" placeholder="Add your note"></input>
                 </div>
                 <div class="checkbox-cnt">
                     <h2>Check Day/s</h2>
-                    <label>Monday</label><input type="checkbox" name="Mon" value="1" />
-                    <label>Tuesday</label><input type="checkbox" name="Tue" value="2" />
-                    <label>Wednesday</label><input type="checkbox" name="Wed" value="3" />
-                    <label>Thursday</label><input type="checkbox" name="Thu" value="4" />
-                    <label>Friday</label><input type="checkbox" name="Fri" value="5" />
-                    <label>Saturday</label><input type="checkbox" name="Sat" value="6" />
-                    <label>Sunday</label><input type="checkbox" name="Sun" value="7" />
+                    <label>Monday</label><input type="checkbox" name="Mon" class="checkboxDay" />
+                    <label>Tuesday</label><input type="checkbox" name="Tue" class="checkboxDay" />
+                    <label>Wednesday</label><input type="checkbox" name="Wed" class="checkboxDay" />
+                    <label>Thursday</label><input type="checkbox" name="Thu" class="checkboxDay" />
+                    <label>Friday</label><input type="checkbox" name="Fri" class="checkboxDay" />
+                    <label>Saturday</label><input type="checkbox" name="Sat" class="checkboxDay" />
+                    <label>Sunday</label><input type="checkbox" name="Sun" class="checkboxDay" />
+                    <label>AllDays</label><input type="checkbox" class="allDays" />
 
-                    <label>Select All</label><input type="checkbox" name="checkboxAll" value="8" />
                 </div>
-                <button class="button" type="button" value="Add item">
+                <button class="button" type="button" >
                 <span>Add item</span>
             </button>
+            <div class="info-container">
+                <div class="error-message"></div>
+                <div class="success-message"></div>
+            </div>
 
             </form>
         </section>
         <div class="allBox">
-            <div class="dayBox"><h3>Monday</h3><ul class="monday"></ul></div>
-            <div class="dayBox"><h3>Tuesday</h3><ul class="tuesday"></ul></div>
-            <div class="dayBox"><h3>Wednesday</h3><ul class="wednesday"></ul></div>
-            <div class="dayBox"><h3>Thursday</h3><ul class="thursday"></ul></div>
-            <div class="dayBox"><h3>Friday</h3><ul class="friday"></ul></div>
-            <div class="dayBox"><h3>Saturday</h3><ul class="saturday"></ul></div>
-            <div class="dayBox"><h3>Sunday</h3><ul class="sunday"></ul></div>
+            <div class="dayBox">
+                <h3>Monday</h3>
+                <ul class="monday"></ul>
+            </div>
+            <div class="dayBox">
+                <h3>Tuesday</h3>
+                <ul class="tuesday"></ul>
+            </div>
+            <div class="dayBox">
+                <h3>Wednesday</h3>
+                <ul class="wednesday"></ul>
+            </div>
+            <div class="dayBox">
+                <h3>Thursday</h3>
+                <ul class="thursday"></ul>
+            </div>
+            <div class="dayBox">
+                <h3>Friday</h3>
+                <ul class="friday"></ul>
+            </div>
+            <div class="dayBox">
+                <h3>Saturday</h3>
+                <ul class="saturday"></ul>
+            </div>
+            <div class="dayBox">
+                <h3>Sunday</h3>
+                <ul class="sunday"></ul>
+            </div>
         </div>
-        <section class='container-notes'>
-            <ul class="your-notes">
 
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
 
         <footer class="main-footer"></footer>
 

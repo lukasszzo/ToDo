@@ -9609,8 +9609,84 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 document.addEventListener('DOMContentLoaded', function () {
-    var App = function (_React$Component) {
-        _inherits(App, _React$Component);
+    var Header = function (_React$Component) {
+        _inherits(Header, _React$Component);
+
+        function Header() {
+            _classCallCheck(this, Header);
+
+            return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+        }
+
+        _createClass(Header, [{
+            key: 'render',
+            value: function render() {
+                return;
+            }
+        }]);
+
+        return Header;
+    }(_react2.default.Component);
+
+    var ToDoList = function (_React$Component2) {
+        _inherits(ToDoList, _React$Component2);
+
+        function ToDoList() {
+            _classCallCheck(this, ToDoList);
+
+            return _possibleConstructorReturn(this, (ToDoList.__proto__ || Object.getPrototypeOf(ToDoList)).apply(this, arguments));
+        }
+
+        _createClass(ToDoList, [{
+            key: 'render',
+            value: function render() {
+                return;
+            }
+        }]);
+
+        return ToDoList;
+    }(_react2.default.Component);
+
+    var ToDoItem = function (_React$Component3) {
+        _inherits(ToDoItem, _React$Component3);
+
+        function ToDoItem() {
+            _classCallCheck(this, ToDoItem);
+
+            return _possibleConstructorReturn(this, (ToDoItem.__proto__ || Object.getPrototypeOf(ToDoItem)).apply(this, arguments));
+        }
+
+        _createClass(ToDoItem, [{
+            key: 'render',
+            value: function render() {
+                return;
+            }
+        }]);
+
+        return ToDoItem;
+    }(_react2.default.Component);
+
+    var NewToDo = function (_React$Component4) {
+        _inherits(NewToDo, _React$Component4);
+
+        function NewToDo() {
+            _classCallCheck(this, NewToDo);
+
+            return _possibleConstructorReturn(this, (NewToDo.__proto__ || Object.getPrototypeOf(NewToDo)).apply(this, arguments));
+        }
+
+        _createClass(NewToDo, [{
+            key: 'render',
+            value: function render() {
+                return;
+            }
+        }]);
+
+        return NewToDo;
+    }(_react2.default.Component);
+
+    var App = function (_React$Component5) {
+        _inherits(App, _React$Component5);
 
         function App() {
             _classCallCheck(this, App);
