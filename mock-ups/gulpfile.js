@@ -13,4 +13,3 @@ gulp.task('default', function(){
 	gulp.start('compilescss');
 	gulp.watch('scss/**/*.scss', ['compilescss']);
 })
-
