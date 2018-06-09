@@ -18,6 +18,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
             }
         }
     } )
+    
 
     allDays.addEventListener( 'click', function () {
         for ( var i = 0; i < checkboxDays.length; i++ ) {

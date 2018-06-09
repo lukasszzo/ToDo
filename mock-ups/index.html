@@ -15,17 +15,20 @@
 
 <body>
     <div class='container'>
+        <!---e:container----->
         <header class='header-cnt'>
             <h1 class="page-title">Create your To do list</h1>
         </header>
         <section class='content-cnt clearfix'>
-
+            <!--e.section----->
 
             <form class="input-form">
-                <div class='note-cnt'>
+                <div class='note-cnt '>
                     <input type="text" class="note-text" placeholder="Add your note"></input>
                 </div>
+
                 <div class="checkbox-cnt">
+
                     <h2>Check Day/s</h2>
                     <label>Monday</label><input type="checkbox" class="checkboxDay" />
                     <label>Tuesday</label><input type="checkbox" class="checkboxDay" />
@@ -40,6 +43,7 @@
                 <button class="button" type="button">
                 <span>Add item</span>
             </button>
+
                 <div class="info-container">
                     <div class="error-message"></div>
                     <div class="success-message"></div>
@@ -47,42 +51,47 @@
 
             </form>
         </section>
+        <!--e.section----->
+
         <div class="allBox">
+            <!---e:allBox----->
             <div class="dayBox">
                 <h3>Monday</h3>
-                <ul class="monday"></ul>
+                <ul class="noteList"></ul>
             </div>
             <div class="dayBox">
                 <h3>Tuesday</h3>
-                <ul class="tuesday"></ul>
+                <ul class="noteList"></ul>
             </div>
             <div class="dayBox">
                 <h3>Wednesday</h3>
-                <ul class="wednesday"></ul>
+                <ul class="noteList"></ul>
             </div>
             <div class="dayBox">
                 <h3>Thursday</h3>
-                <ul class="thursday"></ul>
+                <ul class="noteList"></ul>
             </div>
             <div class="dayBox">
                 <h3>Friday</h3>
-                <ul class="friday"></ul>
+                <ul class="noteList"></ul>
             </div>
             <div class="dayBox">
                 <h3>Saturday</h3>
-                <ul class="saturday"></ul>
+                <ul class="noteList"></ul>
             </div>
             <div class="dayBox">
                 <h3>Sunday</h3>
-                <ul class="sunday"></ul>
+                <ul class="noteList"></ul>
             </div>
         </div>
+        <!---e:allBox----->
 
 
         <footer class="main-footer"></footer>
 
     </div>
-    <script type="text/javascript" src="js/out.js"></script>
+    <!---e:container----->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
